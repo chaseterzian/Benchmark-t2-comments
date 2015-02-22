@@ -1,0 +1,9 @@
+<h1>My Playlist</h1>
+<hr>
+<% @musics.each do |music| %>
+<%= music.artist %> - <%= music.song %>
+<br>
+<% end %>
+
+<hr>
+<%= link_to "Paylist options", musics_path %>

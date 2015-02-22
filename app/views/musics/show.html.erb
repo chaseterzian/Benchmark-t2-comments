@@ -1,0 +1,12 @@
+<br>
+<%= @music.artist %> - <%= @music.song %>
+<hr>
+
+<%= link_to "Edit song", edit_music_path(@music) %>
+|
+<%= link_to "Edit playlist", musics_path %>
+|
+<%= link_to "Remove song", music_path(@music),
+data: {confirm: "Are you sure you want to remove this song?"}, method: "delete" %>
+|
+<%= link_to "Back to playlist", root_path %>
