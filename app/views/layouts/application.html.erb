@@ -12,11 +12,23 @@
   <%= flash[:created] %>
   <hr>
   <% end %>
+                              <!--lines 11-14 are needed to make the flash message
+                              work that I talked about in the "music_controller.rb"
+                              this one is related to the "def create" part of the
+                              controller. See the comments in the "music_controller.rb"
+                              file for more information.  I am not sure if they need to
+                              be above the <%= yield %> but it works this way for sure-->
+
 
   <% if flash[:deleted].present? %>
   <%= flash[:deleted] %>
   <hr>
   <% end %>
+                              <!--lines 23-26 are needed to make the flash message
+                              work that we talked about in the "music_controller.rb"
+                              this one is related to the "def destroy" part of the
+                              controller. See the comments in the "music_controller.rb"
+                              file for more information.-->
 
 <%= yield %>
 
